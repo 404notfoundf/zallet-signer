@@ -1,0 +1,22 @@
+[package]
+name = "zallet-pczt-signer"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.89"
+
+[dependencies]
+anyhow = "1"
+base64 = "0.22"
+clap = { version = "4.5", features = ["derive"] }
+hex = "0.4"
+k256 = { version = "0.13.4", features = ["pkcs8", "pem"] }
+pczt = { version = "=0.10.0", features = ["signer"] }
+pkcs8 = { version = "0.10.2", features = ["encryption", "pem"] }
+rpassword = "7.4"
+ripemd = "0.1"
+secp256k1 = "=0.33.0"
+zcash_transparent = "=0.11.0"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+zeroize = "1"
